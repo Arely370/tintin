@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Modelo 3D</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      body {
-        margin: 0;
-        background-color: #111;
-      }
-      model-viewer {
-        width: 100vw;
-        height: 100vh;
-        background-color: #222;
-      }
-    </style>
-  </head>
-  <body>
-    <model-viewer
-      src="mi_modelo.glb"
-      alt="Modelo 3D"
-      auto-rotate
-      camera-controls
-      shadow-intensity="1">
-    </model-viewer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Visor de Modelos 3D</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selecciona un Modelo 3D</h1>
+  <button onclick="location.href='avion.html'">Ver Avión</button>
+  <button onclick="location.href='nave.html'">Ver Nave</button>
+  <button onclick="location.href='casa.html'">Ver Casa</button>
+</body>
 </html>
